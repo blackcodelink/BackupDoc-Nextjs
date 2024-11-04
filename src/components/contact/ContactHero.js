@@ -63,7 +63,7 @@ export function ContactHero() {
           </ul>
 
           {/* Social Proof */}
-          <div className='w-full'>
+          {/* <div className='w-full'>
             <div className='mt-14 flex items-center gap-x-4 sm:mt-16 xl:mt-20'>
               <h4 className='flex-none text-sm font-semibold uppercase leading-6 tracking-wider text-zinc-400/95'>
                 Our clients
@@ -87,7 +87,7 @@ export function ContactHero() {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Contact Form */}

@@ -11,63 +11,36 @@ import { cn } from '@/lib/utils'
 
 import cosmicButterfly from '@/images/cosmic-butterfly.png'
 import TagsStackIcon from '@/icons/nucleo/tags-stack-16.svg'
-import CheckIcon from '@/icons/nucleo/o-check-16.svg'
 
 const pricingPlans = [
   {
-    title: 'Starter',
+    title: 'Free',
     price: {
-      monthly: '$9',
-      annually: '$7',
+      monthly: '$0',
+      annually: '$0',
     },
     description:
       'Ideal for individual professionals and small teams just beginning their journey looking for a streamlined solution.',
-    features: [
-      {
-        label: '1 GB storage per user',
-        description:
-          'Seasonal latte black java dark blue fair grounds barista black origin caffeine.',
-      },
-      {
-        label: 'Basic support',
-        description:
-          'Seasonal latte black java dark blue fair grounds barista black origin caffeine.',
-      },
-      {
-        label: 'Access to community forums',
-        description:
-          'Seasonal latte black java dark blue fair grounds barista black origin caffeine.',
-      },
-    ],
-
+    popular: false,
+  },
+  {
+    title: 'Starter',
+    price: {
+      monthly: '$49',
+      annually: '$0',
+    },
+    description:
+      'Ideal for individual professionals and small teams just beginning their journey looking for a streamlined solution.',
     popular: false,
   },
   {
     title: 'Pro',
     price: {
-      monthly: '$29',
+      monthly: '$99',
       annually: '$24',
     },
     description:
       'Designed for growing teams and businesses seeking to enhance their productivity.',
-    features: [
-      {
-        label: '5 GB storage per user',
-        description:
-          'Seasonal latte black java dark blue fair grounds barista black origin caffeine.',
-      },
-      {
-        label: 'Priority support',
-        description:
-          'Seasonal latte black java dark blue fair grounds barista black origin caffeine.',
-      },
-      {
-        label: 'Private community forums',
-        description:
-          'Seasonal latte black java dark blue fair grounds barista black origin caffeine.',
-      },
-    ],
-
     popular: true,
   },
   {
@@ -78,24 +51,6 @@ const pricingPlans = [
     },
     description:
       'Tailored for large organizations requiring a comprehensive solution that evolves with your enterprise.',
-    features: [
-      {
-        label: 'Unlimited storage',
-        description:
-          'Seasonal latte black java dark blue fair grounds barista black origin caffeine.',
-      },
-      {
-        label: '24/7 dedicated support',
-        description:
-          'Seasonal latte black java dark blue fair grounds barista black origin caffeine.',
-      },
-      {
-        label: 'Exclusive enterprise forums',
-        description:
-          'Seasonal latte black java dark blue fair grounds barista black origin caffeine.',
-      },
-    ],
-
     popular: false,
   },
 ]
@@ -117,7 +72,7 @@ export function PricingHero() {
             <ContentPill
               Icon={TagsStackIcon}
               iconClassName='h-3.5 w-3.5'
-              text='Nebula’s pricing'
+              text='BackupDoc pricing'
             />
 
             <h1 className='mt-5 max-w-4xl text-center text-[2.75rem] font-bold leading-[1.125] text-violet-100 sm:text-5xl sm:leading-[1.125] md:text-6xl md:leading-[1.125] lg:text-[64px]'>
@@ -169,7 +124,7 @@ export function PricingHero() {
                   sizes='(max-width: 1024px) 100vw, 1024px'
                 />
               </div>
-              <div className='mt-10 w-full space-y-10 lg:grid lg:grid-cols-3 lg:gap-5 lg:space-y-0 xl:gap-12'>
+              <div className='mt-10 flex w-full flex-wrap space-y-10 lg:grid lg:grid-cols-4 lg:gap-5 lg:space-y-0 xl:gap-12'>
                 {pricingPlans.map((plan) => (
                   <div
                     key={`pricing-plans-mobile-${plan.title}`}
@@ -177,57 +132,6 @@ export function PricingHero() {
                   >
                     {/* Pricing card */}
                     <PricingCard plan={plan} billingType={billingType} />
-                    <div className='space-y-8 lg:hidden'>
-                      {plan.features.map((feature) => (
-                        <div
-                          key={`pricing-mobile-${plan.title}-${feature.label}`}
-                          className='flex items-start space-x-3'
-                        >
-                          <CheckIcon
-                            className={cn(
-                              'mt-1.5 h-4 w-4 shrink-0',
-                              plan.popular ? 'text-violet-400' : 'text-white'
-                            )}
-                          />
-
-                          <p className='text-[17px] leading-7 text-zinc-300'>
-                            <span className='mr-0.5 font-semibold text-white'>
-                              {feature.label}.
-                            </span>
-                            {feature.description}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className='hidden lg:mt-16 lg:grid lg:grid-cols-3 lg:gap-5 xl:gap-12'>
-                {pricingPlans.map((plan) => (
-                  <div
-                    key={`pricing-plans-desktop-${plan.title}`}
-                    className='space-y-8'
-                  >
-                    {plan.features.map((feature) => (
-                      <div
-                        key={`pricing-desktop-${plan.title}-${feature.label}`}
-                        className='flex items-start space-x-3'
-                      >
-                        <CheckIcon
-                          className={cn(
-                            'mt-1.5 h-4 w-4 shrink-0',
-                            plan.popular ? 'text-violet-400' : 'text-white'
-                          )}
-                        />
-
-                        <p className='text-[17px] leading-7 text-zinc-300'>
-                          <span className='mr-0.5 font-semibold text-white'>
-                            {feature.label}.
-                          </span>
-                          {feature.description}
-                        </p>
-                      </div>
-                    ))}
                   </div>
                 ))}
               </div>
@@ -236,7 +140,7 @@ export function PricingHero() {
         </Container>
       </div>
 
-      <InvestorTestimonials />
+      {/* <InvestorTestimonials /> */}
     </div>
   )
 }

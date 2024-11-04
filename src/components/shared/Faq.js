@@ -11,34 +11,30 @@ import CommentsIcon from '@/icons/nucleo/comments-16.svg'
 
 const faqs = [
   {
-    question: 'What payment methods does Nebula accept?',
+    question: 'What payment methods does BackupDoc accept?',
     answer:
-      'Nebula accepts a variety of payment methods including major credit and debit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. We also support payments via digital wallets such as Apple Pay and Google Pay.',
+      'BackupDoc accepts a variety of payment methods, including major credit and debit cards (Visa, MasterCard, American Express),PayPal, and bank transfers.',
   },
   {
     question: 'Can I change my plan later on?',
     answer:
-      'Yes, you can change your plan at any time. Simply go to your account settings and select the "Change Plan" option. You can upgrade or downgrade your plan as needed. Any changes will be prorated based on your billing cycle.',
-  },
-  {
-    question: 'Does Nebula offer any discounts for nonprofits?',
-    answer:
-      'Yes, Nebula offers special discounts for nonprofit organizations. To apply for a nonprofit discount, please contact our support team with proof of your nonprofit status, and we will provide you with a discount code to use during checkout.',
-  },
-  {
-    question: 'Can I get a refund if I don’t like Nebula?',
-    answer:
-      'Yes, we offer a 30-day money-back guarantee. If you are not satisfied with Nebula, you can request a refund within 30 days of your purchase. Please contact our support team to initiate the refund process.',
+      'Yes, you can change your plan at any time. Simply go to your account settings and select the "Change Plan" option. You can upgrade or downgrade your plan as needed. Any changes will be prorated based on your billing cycle',
   },
   {
     question: 'Is there a free trial available?',
     answer:
-      'Yes, we offer a 14-day free trial for all our plans. You can sign up for the free trial without providing payment information. If you decide to continue using Nebula after the trial period, you will need to select a plan and provide payment details.',
+      'No, But we Have seasonal Discounts via sales executives, contact support to know who your area representative today.',
   },
   {
-    question: 'How does Nebula handle data privacy and security?',
+    question: 'Can I get a refund if I don’t find BackupDoc useful?',
     answer:
-      'Nebula takes data privacy and security very seriously. We implement industry-standard security measures to protect your data, including encryption, secure servers, and regular security audits. We are also compliant with GDPR and other data protection regulations.',
+      'Yes, we offer a 30-day money-back guarantee. If you’re not satisfied with BackupDoc, request are fund within 30 days of your purchase. Contact our support team to initiate the refund process..',
+  },
+
+  {
+    question: 'How does BackupDoc ensure data privacy and security?',
+    answer:
+      'BackupDoc places the highest priority on data privacy and security. We utilize industry-standard security measures, including encryption, secure servers, and routine audits. Additionally, we comply with all relevant healthcare data protection regulations to keep your information safe and secure.',
   },
 ]
 
@@ -84,7 +80,7 @@ export function Faq() {
             Frequently asked questions
           </h1>
           <p className='mt-5 max-w-2xl text-center text-[17px] leading-8 text-zinc-200 sm:text-lg sm:leading-8'>
-            Haven’t found what you’re looking for? Try Nebula’s wiki or{' '}
+            Haven’t found what you’re looking for?{' '}
             <Link
               href='/contact'
               className='font-medium text-violet-300 underline duration-200 ease-in-out hover:text-violet-400'

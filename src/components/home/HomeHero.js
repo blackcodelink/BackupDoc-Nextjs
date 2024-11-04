@@ -221,7 +221,7 @@ export const HomeHero = () => {
         </p>
 
         {/* Logos */}
-        {/* <div className='relative mt-8 overflow-hidden [mask:linear-gradient(90deg,_transparent,_white_20%,_white_80%,_transparent)]'>
+        <div className='relative mt-8 overflow-hidden [mask:linear-gradient(90deg,_transparent,_white_20%,_white_80%,_transparent)]'>
           <div className='flex w-max animate-infiniteScroll items-center justify-around'>
             {[...Array(2)].map((_, index) => (
               <div
@@ -231,14 +231,14 @@ export const HomeHero = () => {
                 {CLIENTS.map((client) => (
                   <client.logo
                     key={`homehero-${client.name}-${index}`}
-                    className='mx-3 scale-90 sm:mx-6 sm:scale-100'
+                    className='mx-3 h-24 w-24 scale-90 sm:mx-6 sm:scale-100'
                   />
                 ))}
               </div>
             ))}
           </div>
-        </div> */}
-        <div className='relative mt-8 overflow-hidden [mask:linear-gradient(90deg,_transparent,_white_20%,_white_80%,_transparent)]'>
+        </div>
+        {/* <div className='relative mt-8 overflow-hidden [mask:linear-gradient(90deg,_transparent,_white_20%,_white_80%,_transparent)]'>
           <div className='flex w-max animate-infiniteScroll items-center justify-around'>
             {[...Array(2)].map((_, index) => (
               <div
@@ -246,7 +246,7 @@ export const HomeHero = () => {
                 className='flex w-1/2 items-center'
               >
                 {CLIENTS.map((client) => (
-                  <Image
+                  <img
                     key={`homehero-${client.name}-${index}`}
                     src={client.logo}
                     alt={client.name}
@@ -258,7 +258,7 @@ export const HomeHero = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </Container>
   )

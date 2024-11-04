@@ -39,7 +39,6 @@ import logoIcon from '@/images/logo.jpeg'
 
 const pages = [
   { label: 'Home', href: '/', icon: HomeIcon },
-  { label: 'Product', href: '/' },
   { label: 'About', href: '/about', icon: UsersIcon },
   {
     label: 'Pricing',
@@ -67,7 +66,6 @@ const pages = [
 
 const links = [
   { label: 'Home', href: '/' },
-  { label: 'Product', href: '/product' },
   { label: 'About', href: '/about' },
   { label: 'Pricing', href: '/pricing' },
   { label: 'Contact', href: '/contact' },

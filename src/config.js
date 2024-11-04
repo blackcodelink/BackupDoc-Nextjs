@@ -9,7 +9,15 @@ import stripe from './images/logos/stripe.svg'
 import facebook from './images/logos/facebook.svg'
 import oracle from './images/logos/oracle.svg'
 import mavinDental from '@/images/logos/mavinDental.svg'
-
+import Logo3 from '/public/images/3.svg'
+import Logo4 from '/public/images/4.svg'
+import Logo5 from '/public/images/5.svg'
+import Logo6 from '/public/images/6.svg'
+import Logo7 from '/public/images/7.svg'
+import Logo8 from '/public/images/8.svg'
+import Logo9 from '/public/images/9.svg'
+import Logo10 from '/public/images/10.svg'
+import Logo11 from '/public/images/11.svg'
 import smileSolution from './images/logos/smileSolution.png'
 
 import twitterIcon from '@/icons/nucleo/twitter.svg'
@@ -57,15 +65,14 @@ export const SOCIALS = [
 ]
 
 export const CLIENTS = [
-  { name: 'OroDental', logo: '/images/11.svg' },
-  { name: 'mavinDental', logo: '/images/2.svg' },
-  { name: 'bhupaDental', logo: '/images/3.svg' },
-
-  { name: 'smileSolution', logo: '/images/4.svg' },
-  { name: 'Lumino', logo: '/images/5.svg' },
-  { name: 'Dental Artisary', logo: '/images/6.svg' },
-  { name: 'MaxcareDental', logo: '/images/7.svg' },
-  { name: 'Luna', logo: '/images/8.svg' },
-  { name: 'ZenithDental', logo: '/images/9.svg' },
-  { name: 'WhiteDental', logo: '/images/10.svg' },
+  // { name: 'mavinDental', logo: '/images/mavinDental.svg' },
+  { name: 'bhupaDental', logo: Logo3 },
+  { name: 'smileSolution', logo: Logo4 },
+  { name: 'Lumino', logo: Logo5 },
+  { name: 'Dental Artisary', logo: Logo6 },
+  { name: 'MaxcareDental', logo: Logo7 },
+  { name: 'Luna', logo: Logo8 },
+  { name: 'ZenithDental', logo: Logo9 },
+  { name: 'WhiteDental', logo: Logo10 },
+  { name: 'OroDental', logo: Logo11 },
 ]

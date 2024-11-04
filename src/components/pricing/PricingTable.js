@@ -18,48 +18,54 @@ const pricingTableData = [
     icon: TeamIcon,
     features: [
       {
-        name: 'Video Conferencing',
+        name: 'Image Analysis Credits ',
         plans: {
-          starter: 'Up to 10 hrs/month',
-          pro: 'Unlimited',
+          free: '3',
+          starter: '50',
+          pro: '150',
           enterprise: 'Unlimited',
         },
       },
       {
-        name: 'Team Workspace',
+        name: 'users',
         plans: {
-          starter: 'Up to 5',
-          pro: 'Unlimited',
+          free: '1',
+          starter: '1',
+          pro: '2',
           enterprise: 'Unlimited',
         },
       },
       {
         name: 'File Storage',
         plans: {
-          starter: '5 GB',
-          pro: '50 GB',
-          enterprise: '1 TB',
+          free: '50 mb',
+          starter: '200 mb',
+          pro: '500 GB',
+          enterprise: '1 GB',
         },
       },
       {
-        name: 'Collaboration History',
+        name: 'Unique Patinet Number',
         plans: {
-          starter: '30 days',
-          pro: '1 year',
+          free: '3',
+          starter: '50',
+          pro: 'Unlimited',
           enterprise: 'Unlimited',
         },
       },
       {
-        name: 'Instant Messaging',
+        name: 'Support Contact',
         plans: {
+          free: false,
           starter: true,
           pro: true,
           enterprise: true,
         },
       },
       {
-        name: 'Guest Access',
+        name: 'Priority  Support',
         plans: {
+          free: false,
           starter: false,
           pro: true,
           enterprise: true,
@@ -68,12 +74,13 @@ const pricingTableData = [
     ],
   },
   {
-    category: 'Project Management & Workflow',
+    category: 'AI-driven Report Customization',
     icon: RoadmapIcon,
     features: [
       {
-        name: 'Custom Workflow Templates',
+        name: 'HIPAA-Compliant Data Security',
         plans: {
+          free: false,
           starter: false,
           pro: 'Up to 10',
           enterprise: 'Unlimited',
@@ -82,38 +89,25 @@ const pricingTableData = [
       {
         name: 'Reporting and Analytics',
         plans: {
-          starter: 'Basic',
+          free: '3',
+          starter: 'Custome',
           pro: 'Advanced',
           enterprise: 'Customizable',
         },
       },
       {
-        name: 'Task Assignment',
+        name: 'Basic Patient Communication Tools',
         plans: {
+          free: false,
           starter: true,
           pro: true,
           enterprise: true,
         },
       },
       {
-        name: 'Gantt Charts',
+        name: 'Enhanced Patient Communication Tools',
         plans: {
-          starter: false,
-          pro: true,
-          enterprise: true,
-        },
-      },
-      {
-        name: 'Time Tracking',
-        plans: {
-          starter: false,
-          pro: true,
-          enterprise: true,
-        },
-      },
-      {
-        name: 'Automated Workflow Triggers',
-        plans: {
+          free: false,
           starter: false,
           pro: true,
           enterprise: true,
@@ -121,157 +115,126 @@ const pricingTableData = [
       },
     ],
   },
-  {
-    category: 'Security & Compliance',
-    icon: PadlockUnlockedIcon,
-    features: [
-      {
-        name: 'Audit Logs',
-        plans: {
-          starter: false,
-          pro: '6 months',
-          enterprise: 'Unlimited',
-        },
-      },
-      {
-        name: 'Data Encryption',
-        plans: {
-          starter: true,
-          pro: true,
-          enterprise: true,
-        },
-      },
-      {
-        name: 'Two-Factor Authentication (2FA)',
-        plans: {
-          starter: true,
-          pro: true,
-          enterprise: true,
-        },
-      },
-      {
-        name: 'Compliance Reporting',
-        plans: {
-          starter: false,
-          pro: true,
-          enterprise: true,
-        },
-      },
-      {
-        name: 'Role-Based Access Control',
-        plans: {
-          starter: false,
-          pro: true,
-          enterprise: true,
-        },
-      },
-      {
-        name: 'API Security',
-        plans: {
-          starter: false,
-          pro: true,
-          enterprise: true,
-        },
-      },
-    ],
-  },
-  {
-    category: 'Integration & Extensibility',
-    icon: AlgorithmIcon,
-    features: [
-      {
-        name: 'API Access',
-        plans: {
-          starter: 'Limited',
-          pro: 'Full access',
-          enterprise: 'Full access',
-        },
-      },
-      {
-        name: 'Marketplace Access',
-        plans: {
-          starter: 'Basic',
-          pro: 'Full access',
-          enterprise: 'Full access',
-        },
-      },
-      {
-        name: 'Third-Party App Integrations',
-        plans: {
-          starter: 3,
-          pro: 10,
-          enterprise: 'Unlimited',
-        },
-      },
-      {
-        name: 'Webhooks',
-        plans: {
-          starter: false,
-          pro: true,
-          enterprise: true,
-        },
-      },
-      {
-        name: 'SDK Access',
-        plans: {
-          starter: false,
-          pro: true,
-          enterprise: true,
-        },
-      },
-      {
-        name: 'Custom Integrations',
-        plans: {
-          starter: false,
-          pro: true,
-          enterprise: true,
-        },
-      },
-    ],
-  },
+  // {
+  //   category: 'Security & Compliance',
+  //   icon: PadlockUnlockedIcon,
+  //   features: [
+  //     {
+  //       name: 'Audit Logs',
+  //       plans: {
+  //         starter: false,
+  //         pro: '6 months',
+  //         enterprise: 'Unlimited',
+  //       },
+  //     },
+  //     {
+  //       name: 'Data Encryption',
+  //       plans: {
+  //         starter: true,
+  //         pro: true,
+  //         enterprise: true,
+  //       },
+  //     },
+  //     {
+  //       name: 'Two-Factor Authentication (2FA)',
+  //       plans: {
+  //         starter: true,
+  //         pro: true,
+  //         enterprise: true,
+  //       },
+  //     },
+  //     {
+  //       name: 'Compliance Reporting',
+  //       plans: {
+  //         starter: false,
+  //         pro: true,
+  //         enterprise: true,
+  //       },
+  //     },
+  //     {
+  //       name: 'Role-Based Access Control',
+  //       plans: {
+  //         starter: false,
+  //         pro: true,
+  //         enterprise: true,
+  //       },
+  //     },
+  //     {
+  //       name: 'API Security',
+  //       plans: {
+  //         starter: false,
+  //         pro: true,
+  //         enterprise: true,
+  //       },
+  //     },
+  //   ],
+  // },
+  // {
+  //   category: 'Integration & Extensibility',
+  //   icon: AlgorithmIcon,
+  //   features: [
+  //     {
+  //       name: 'API Access',
+  //       plans: {
+  //         starter: 'Limited',
+  //         pro: 'Full access',
+  //         enterprise: 'Full access',
+  //       },
+  //     },
+  //     {
+  //       name: 'Marketplace Access',
+  //       plans: {
+  //         starter: 'Basic',
+  //         pro: 'Full access',
+  //         enterprise: 'Full access',
+  //       },
+  //     },
+  //     {
+  //       name: 'Third-Party App Integrations',
+  //       plans: {
+  //         starter: 3,
+  //         pro: 10,
+  //         enterprise: 'Unlimited',
+  //       },
+  //     },
+  //     {
+  //       name: 'Webhooks',
+  //       plans: {
+  //         starter: false,
+  //         pro: true,
+  //         enterprise: true,
+  //       },
+  //     },
+  //     {
+  //       name: 'SDK Access',
+  //       plans: {
+  //         starter: false,
+  //         pro: true,
+  //         enterprise: true,
+  //       },
+  //     },
+  //     {
+  //       name: 'Custom Integrations',
+  //       plans: {
+  //         starter: false,
+  //         pro: true,
+  //         enterprise: true,
+  //       },
+  //     },
+  //   ],
+  // },
 ]
 
-const planLabels = ['starter', 'pro', 'enterprise']
+const planLabels = ['Free', 'starter', 'pro', 'enterprise']
 
 export function PricingTable() {
   return (
     <section className='relative overflow-hidden bg-[linear-gradient(rgba(24,24,27,0.95),rgba(24,24,27,0.95)),linear-gradient(#2E1065,#2E1065)] pb-16 pt-20 sm:py-24 lg:py-28'>
-      <div className='absolute left-0 top-0 w-full max-w-7xl -translate-x-1/2 -translate-y-1/2'>
-        <Image
-          src={spaceSpotlight}
-          alt=''
-          className='h-full w-full object-contain'
-          sizes='(max-width: 1024px) 100vw, 1280px'
-        />
-      </div>
-
-      {/* Stars */}
-      <div className='absolute left-0 top-0 z-0 h-72 w-72' aria-hidden='true'>
-        <StarField density='high' maxRadius={2.5} minRadius={1.25} />
-      </div>
-
-      <div className='absolute -top-96 bottom-48 left-0 right-80 z-0'>
-        <Image
-          src={longGradient}
-          alt=''
-          className='h-full w-full object-contain object-center opacity-50'
-          sizes='(max-width: 768px) 100vw, 1024px'
-        />
-      </div>
-
-      <div className='absolute -bottom-96 -right-2/3 left-0 top-1/2 z-0'>
-        <Image
-          src={longGradient}
-          alt=''
-          className='h-full w-full object-contain object-center opacity-40'
-          sizes='(max-width: 768px) 100vw, 1024px'
-        />
-      </div>
       <Container>
         {/* Heading */}
         <div className='relative flex flex-col items-center'>
           <h1 className='max-w-4xl text-center text-4xl font-bold leading-extratight text-violet-100 sm:text-5xl sm:leading-extratight'>
-            Compare all plan details
+            Compare all plan details
           </h1>
         </div>
 
