@@ -24,6 +24,9 @@ export default function Pricing() {
       <PricingTable />
       <Divider />
       <Faq />
+
+      <Divider />
+
       <Divider />
       <Footer />
     </>

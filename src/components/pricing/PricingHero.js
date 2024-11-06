@@ -16,8 +16,8 @@ const pricingPlans = [
   {
     title: 'Free',
     price: {
-      monthly: '$0',
-      annually: '$0',
+      monthly: 'Free',
+      annually: 'Free',
     },
     description:
       'Ideal for individual professionals and small teams just beginning their journey looking for a streamlined solution.',
@@ -26,8 +26,8 @@ const pricingPlans = [
   {
     title: 'Starter',
     price: {
-      monthly: '$49',
-      annually: '$0',
+      monthly: '999',
+      annually: '9590',
     },
     description:
       'Ideal for individual professionals and small teams just beginning their journey looking for a streamlined solution.',
@@ -36,8 +36,8 @@ const pricingPlans = [
   {
     title: 'Pro',
     price: {
-      monthly: '$99',
-      annually: '$24',
+      monthly: '1999',
+      annually: '19190',
     },
     description:
       'Designed for growing teams and businesses seeking to enhance their productivity.',
@@ -46,8 +46,8 @@ const pricingPlans = [
   {
     title: 'Enterprise',
     price: {
-      monthly: '$69',
-      annually: '$59',
+      monthly: 'Custom',
+      annually: 'Custom',
     },
     description:
       'Tailored for large organizations requiring a comprehensive solution that evolves with your enterprise.',
@@ -131,7 +131,11 @@ export function PricingHero() {
                     className='flex flex-1 flex-col space-y-8 lg:space-y-0'
                   >
                     {/* Pricing card */}
-                    <PricingCard plan={plan} billingType={billingType} />
+                    <PricingCard
+                      plan={plan}
+                      price={plan.price[billingType]}
+                      billingType={billingType}
+                    />
                   </div>
                 ))}
               </div>

@@ -9,7 +9,7 @@ import { ChevronRightIcon } from '@heroicons/react/16/solid'
 export const metadata = {
   title: 'Sign in',
   description:
-    'Access your Nebula account by signing in. Enjoy seamless remote work collaboration and tools.',
+    'Access your BackupDoc account by signing in. Enjoy seamless remote work collaboration and tools.',
 }
 
 export default function Signin() {

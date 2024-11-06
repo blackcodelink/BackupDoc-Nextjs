@@ -70,6 +70,10 @@ const links = [
   { label: 'Pricing', href: '/pricing' },
   { label: 'Contact', href: '/contact' },
 ]
+const productOptions = [
+  { label: 'Doctor', href: '/products/doctor' },
+  { label: 'Insurance', href: '/products/insurance' },
+]
 
 function Hamburger() {
   return (
@@ -153,7 +157,7 @@ function DropDownMenu({ dropdownGap, dropdownPadding }) {
       }}
       modal={false}
     >
-      {pages.map((link) => (
+      {productOptions.map((link) => (
         <MenuItem key={`pages-dropdiwn-link-${link.href}`}>
           <Link
             href={link.href}
@@ -359,7 +363,7 @@ export const NavbarPill = () => {
               className='group relative z-40 hidden h-full items-center px-3 py-2.5 text-sm font-medium text-violet-50 outline-none drop-shadow-[-4px_-4px_6px_rgba(237,233,254,0.2)] duration-200 ease-in-out hover:text-violet-400/95 data-[open]:text-violet-400 data-[open]:drop-shadow-[-4px_-4px_6px_rgba(196,181,253,0.2)] md:inline-flex lg:px-4'
               ref={dropdownButtonRef}
             >
-              <span>Pages</span>
+              <span>Product</span>
 
               <ChevronDownIcon className='ml-1 h-4.5 w-4.5 text-violet-50/90 duration-300 group-hover:text-violet-400/80 group-data-[open]:rotate-180 group-data-[open]:text-violet-400/90' />
             </MenuButton>

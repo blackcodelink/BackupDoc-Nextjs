@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Button } from '@/components/shared/Button'
 import { ContentPill } from '@/components/shared/ContentPill'
 import { StarField } from '@/components/shared/StarField'
-
+import Link from 'next/link'
 import spaceSpotlight from '@/images/space-spotlight.png'
 
 export function PricingCard({ plan, billingType }) {
@@ -60,12 +60,14 @@ export function PricingCard({ plan, billingType }) {
           </p>
         </div>
 
-        <Button
-          variant={plan.popular ? 'primary' : 'secondary'}
-          className='mt-8 w-full py-4 text-base leading-none sm:py-4'
-        >
-          Buy this plan
-        </Button>
+        <Link href='/checkout'>
+          <Button
+            variant={plan.popular ? 'primary' : 'secondary'}
+            className='mt-8 w-full py-4 text-base leading-none sm:py-4'
+          >
+            Buy this plan
+          </Button>
+        </Link>
       </div>
     </div>
   )
