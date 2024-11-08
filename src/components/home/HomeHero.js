@@ -145,7 +145,7 @@ export const HomeHero = () => {
                   className='absolute h-full w-full rounded-lg'
                   allow='autoplay'
                   title='Video'
-                  src='https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
+                  src='https://www.youtube.com/embed/_rgUQS04ztg'
                 ></iframe>
               </div>
             </DialogPanel>

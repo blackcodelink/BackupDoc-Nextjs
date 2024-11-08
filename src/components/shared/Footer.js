@@ -14,7 +14,7 @@ import company from '@/icons/nucleo/company-18.svg'
 import integrations from '@/icons/nucleo/integrations-18.svg'
 import resources from '@/icons/nucleo/resources-18.svg'
 import scale from '@/icons/nucleo/scale-18.svg'
-
+import { Menu } from '@headlessui/react'
 const navigation = [
   {
     icon: browser,
