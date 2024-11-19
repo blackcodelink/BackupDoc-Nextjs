@@ -100,7 +100,7 @@ export const DashboardHero = ({ children }) => {
         {/* Left Section */}
         <div className='flex h-full w-1/4 flex-col bg-white'>
           {/* Patient List with Search Input */}
-          <div className='search flex items-center border bg-pink-950 p-4 shadow-sm'>
+          <div className='search flex items-center border bg-pink-900 p-4 shadow-sm'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='16'
@@ -126,7 +126,7 @@ export const DashboardHero = ({ children }) => {
             {filteredPatients.map((patient) => (
               <li
                 key={patient.id}
-                className='cursor-pointer p-2 text-black transition hover:bg-pink-950'
+                className='cursor-pointer p-2 text-black transition hover:bg-pink-900'
                 onClick={() => selectPatient(patient)}
               >
                 {patient.name}
@@ -136,7 +136,7 @@ export const DashboardHero = ({ children }) => {
 
           {/* Image Upload Section moved to the bottom */}
           <div
-            className='shadow-rounded-custom mx-auto mb-16 mt-auto flex h-auto w-80 flex-col justify-between rounded-lg bg-white p-4 text-center text-white transition duration-300'
+            className='mx-auto mb-16 mt-auto flex h-auto w-80 flex-col justify-between rounded-lg bg-white p-4 text-center text-white shadow-rounded-custom transition duration-300'
             onPaste={handlePaste}
           >
             <div className='flex-grow'>

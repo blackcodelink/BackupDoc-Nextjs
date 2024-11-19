@@ -225,7 +225,7 @@ const pricingTableData = [
   // },
 ]
 
-const planLabels = ['Free', 'starter', 'pro', 'enterprise']
+const planLabels = ['free', 'starter', 'pro', 'enterprise']
 
 export function PricingTable() {
   return (

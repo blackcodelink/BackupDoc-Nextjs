@@ -87,6 +87,10 @@ const AnalysisDashboard = ({
                     <span className='text-sm text-gray-500'>
                       {legend.percentage}%
                     </span>
+                    <input
+                      type='checkbox'
+                      className='h-4 w-4 accent-blue-500' // Tailwind styling for the checkbox
+                    />
                   </div>
                   <div className='mt-1 h-px w-full bg-gray-300' />
                 </div>
@@ -143,6 +147,14 @@ const AnalysisDashboard = ({
                   Measurements
                 </span>
               </div>
+            </div>
+            <div className='mr-2 mt-6 flex items-center gap-4'>
+              <button className='ml-2 rounded-lg bg-blue-950 px-4 py-2 text-white hover:bg-blue-700'>
+                Mail
+              </button>
+              <button className='ml-2 rounded-lg bg-blue-950 px-4 py-2 text-white hover:bg-blue-700'>
+                Print
+              </button>
             </div>
           </div>
         </div>
