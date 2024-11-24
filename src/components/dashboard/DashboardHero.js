@@ -31,7 +31,11 @@ export const DashboardHero = ({ children }) => {
   }
 
   const addPatient = (patient) => {
-    setPatients([...patients, patient])
+    // Combine first and last name into one 'name' field
+    const fullName = `${patient.first_name} ${patient.last_name}`
+    const newPatient = { ...patient, name: fullName }
+
+    setPatients([...patients, newPatient])
     setIsModalOpen(false)
   }
 
@@ -129,7 +133,7 @@ export const DashboardHero = ({ children }) => {
                 className='cursor-pointer p-2 text-black transition hover:bg-pink-900'
                 onClick={() => selectPatient(patient)}
               >
-                {patient.name}
+                {patient.name} {/* Display full name here */}
               </li>
             ))}
           </ul>

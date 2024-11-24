@@ -79,14 +79,6 @@ export function StoryWithValues() {
                 to simplify diagnostics, improve patient outcomes, and increase
                 the efficiency of dental practices worldwide.
               </p>
-              {/* <p className='mt-8 text-lg leading-8 text-zinc-300 lg:text-[17px] lg:leading-8 xl:text-lg xl:leading-8'>
-                What began as a tool to aid dentists has rapidly evolved into a
-                platform that is reshaping the future of dental care. As we
-                continue to develop and expand, our goal remains the same: to
-                provide the best AIpowered solutions for dental professionals.
-                From diagnostics to patient management, BackupDoc is committed
-                to being a trusted partner in your practice’s success.
-              </p> */}
             </div>
 
             {/* Team photo */}
@@ -117,9 +109,34 @@ export function StoryWithValues() {
             What began as a tool to aid dentists has rapidly evolved into a
             platform that is reshaping the future of dental care. As we continue
             to develop and expand, our goal remains the same: to provide the
-            best AIpowered solutions for dental professionals. From diagnostics
+            best AI-powered solutions for dental professionals. From diagnostics
             to patient management, BackupDoc is committed to being a trusted
             partner in your practice’s success.
+          </p>
+          {/* New paragraph content */}
+          <p className='mt-6 text-center text-xs leading-relaxed text-white'>
+            <span className='inline-block font-serif text-5xl'>“</span>
+            As a dedicated tooth fairy, I once got a thumbs down from a client
+            on what I thought
+            <br />
+            <span className='m-0 p-0'>was top-notch dental work.</span>
+            <br />
+            Digging deeper, it turned out another tooth fairy had given my
+            client a wrong
+            <br />
+            impression, leading to unnecessary suspicion.
+            <br />
+            This got me thinking about an unbiased, clear-cut, third-party
+            system to boost trust and
+            <br />
+            precision in dental diagnostics.
+            <br />
+            BackupDoc steps into this space, providing trustworthy AI-backed
+            second opinions,
+            <br />
+            giving both tooth fairies and clients trust in the diagnostic
+            journey.
+            <span className='mt-4 inline-block font-serif text-5xl'>”</span>
           </p>
         </div>
       </div>

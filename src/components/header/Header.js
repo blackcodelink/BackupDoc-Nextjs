@@ -44,16 +44,18 @@ export const Header = () => {
 
             {/* Dashboard Dropdown Menu */}
             <Menu as='div' className='relative inline-block text-left'>
-              <Menu.Button className='flex items-center rounded-lg bg-white px-4 py-2 text-sm font-medium hover:bg-blue-100'>
-                <Image
-                  src={userprofile}
-                  alt='User Profile Icon'
-                  width={30}
-                  height={30}
-                  className='h-7 w-auto transition-opacity duration-200 hover:opacity-100 lg:h-8'
-                />
-              </Menu.Button>
-              <Menu.Items className='absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+              <Button className='hidden items-center md:flex lg:space-x-3 xl:space-x-4'>
+                <Menu.Button>
+                  <Image
+                    src={userprofile}
+                    alt='User Profile Icon'
+                    width={30}
+                    height={30}
+                    className='h-7 w-auto text-violet-50 transition-opacity duration-200 hover:opacity-100 lg:h-8'
+                  />
+                </Menu.Button>
+              </Button>
+              <Menu.Items className='absolute right-2 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
                 <div className='py-1'>
                   <Menu.Item>
                     {({ active }) => (

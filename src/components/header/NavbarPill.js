@@ -36,9 +36,9 @@ import {
 
 import logo from '@/images/logo.png'
 import logoIcon from '@/images/logo.jpeg'
-import userprofile from '@/images/profile-user.png'
+import profileUser from '@/images/profile-user.png'
 const pages = [
-  { label: 'UserDashbaord', href: '/productOptions', icon: userprofile },
+  // { label: 'UserDashbaord', href: '/', icon: profileUser },
   { label: 'Home', href: '/', icon: HomeIcon },
   { label: 'About', href: '/about', icon: UsersIcon },
   {
@@ -131,9 +131,16 @@ function MobileNavigation() {
                   className='group relative z-10 block text-nowrap py-2 text-sm font-medium text-violet-50 drop-shadow-[-4px_-4px_6px_rgba(237,233,254,0.2)] duration-200 ease-in-out hover:text-violet-400/95 hover:drop-shadow-[-4px_-4px_6px_rgba(196,181,253,0.2)]'
                 >
                   <span className='flex items-center'>
-                    {link.icon && (
-                      <link.icon className='mr-2 h-4 w-4 text-violet-100/60 group-hover:text-violet-300/80' />
-                    )}
+                    {link.icon &&
+                      (typeof link.icon === 'string' ? (
+                        <Image
+                          src={link.icon}
+                          alt={link.label}
+                          className='mr-2 h-4 w-4 text-violet-100/60 group-hover:text-violet-300/80'
+                        />
+                      ) : (
+                        <link.icon className='mr-2 h-4 w-4 text-violet-100/60 group-hover:text-violet-300/80' />
+                      ))}
 
                     {link.label}
                   </span>
